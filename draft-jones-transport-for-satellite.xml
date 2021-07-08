@@ -427,15 +427,14 @@
         <section title="Larger Bandwidth Delay Product">
           <t>Although capacity is often less than in many terrestrial systems,
           the bandwidth delay product (BDP) defines the amount of data that a
-          protocol is permitted to have "in flight" (data transmitted, but not
-          yet acknowledged) at any one time to fully utilize the available
-          capacity.</t>
+          protocol is permitted to have "in flight" at any one time to fully
+          utilize the available capacity. In flight means data that is transmitted,
+          but not yet acknowledged.</t>
 
           <t>The delay used in this equation is the path RTT and the bandwidth
           is the capacity of the bottleneck link along the network path.
           Because the delay in some satellite environments is larger,
-          protocols need to keep a larger number of packets "in flight" (that
-          is, sent but not yet acknowledged).</t>
+          protocols need to keep a larger number of packets in flight.</t>
 
           <t>This also impacts the size of window/credit needed to avoid flow
           control mechanisms throttling the sender rate.</t>
