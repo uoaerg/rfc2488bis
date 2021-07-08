@@ -379,7 +379,10 @@
 	  Ka-band transponders range from 50 to 250 MHz.XXX </t>
 
           <t>Link Design: It is common to consider the satellite network
-          segment composed of a forward link and a return link. The two links
+          segment composed of a forward link and a return link. The forward
+          link (also called "downlink") is the link from the ground station
+          of the satellite to the user terminal. The return link (also called
+          "uplink") is the link in the opposed direction. These two links
           can have different capacities and employ different technologies to
           carry the IP packets. On the forward link, the satellite gateway
           often manages all the available capacity, possibly with several
