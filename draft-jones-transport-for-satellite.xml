@@ -333,7 +333,7 @@
       <t><list style="symbols">
 	  <t>Packet Loss: The strength of any radio signal falls in proportion
 	  to the square of the distance traveled. For a satellite link the
-	  square of the distance traveled. Is large and so the signal becomes
+	  square of the distance traveled is large and so the signal becomes
 	  weak before reaching its destination. This results in a low
 	  signal-to-noise ratio. Some frequencies are particularly susceptible
 	  to atmospheric effects such as rain attenuation. For mobile
@@ -489,7 +489,7 @@
       </section>
 
       <section title="Quality of Service (QoS)">
-        <t>Links were packets are sent over radio channels exhibit various
+        <t>Links where packets are sent over radio channels exhibit various
         trade-offs in the way the signal is sent on the communications channel.
         These trade-offs are not necessarily the same for all packets, and
         network traffic flows can be optimised by mapping these onto different
@@ -670,7 +670,7 @@
 
       <section title="Flow Control">
         <t>Flow Control mechanisms allow the receiver to control the amount of
-        data a send can have in flight at any time. Flow Control allows the
+        data a sender can have in flight at any time. Flow Control allows the
         receiver to allocate the smallest buffer sizes possible improving
         memory usage on receipt.</t>
 
