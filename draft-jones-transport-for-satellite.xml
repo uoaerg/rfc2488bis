@@ -587,8 +587,8 @@
 
           <t>Getting up to speed: many congestion control methods employ an
           exponential increase in the sending rate during slow start (for path
-          capacity probing), a high RTT will increase the time to reach a
-          specific rate;</t>
+          capacity probing), a high RTT will increase the time to reach the
+          maximum possible rate;</t>
 
 	  <t>Asymmetry: when the links are asymmetric the return path may
 	  modify the rate and/timing of transport acknowledgment traffic,
@@ -653,7 +653,7 @@
         apply FEC to all or a part of the end-to-end path.</t>
 
         <t>The benefits of introducing FEC need to weighed against the
-        additional capacity introduced by end-to-end FEC and the opportunity
+        additional overhead introduced by end-to-end FEC and the opportunity
         to use link-local ARQ and/or link-adaptive FEC. A transport
         connections can suffer link-related losses from a particular link
         (e.g., Wi-Fi), but also congestion loss (e.g. router buffer overflow
@@ -756,9 +756,9 @@
 
       <section title="QUIC Protocol Mechanisms">
         <section title="Transport initialization">
-          <t>QUIC has an advantage that the TLS and TCP negotiations can be
-          completed during the transport connection handshake. This can reduce
-          the time to transmit the first data. Moreover, using 0-RTT may
+          <t>QUIC has an advantage that the TLS and transport protocol negotiations
+          can be completed during the transport connection handshake. This can
+          reduce the time to transmit the first data. Moreover, using 0-RTT may
           further reduce the connection time for users reconnecting to a
           server.</t>
         </section>
