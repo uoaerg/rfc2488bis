@@ -596,17 +596,20 @@
 	  rate).</t>
         </list></t>
 
-      <section title="Getting up to Speed">
+      <section title="Transport Initialization">
         <t>Many transport protocols now deploy 0-RTT mechanisms [REF] to
         reduce the number of RTTs required to establish a connection. QUIC has
         an advantage that the TLS and TCP negotiations can be completed during
         the transport connection handshake. This can reduce the time to
-        transmit the first data. Results of <xref target="IJSCN19"> </xref>
-        illustrate that it can still take many RTTs for a CC to increase the
-        sending rate to fill the bottleneck capacity. The delay in getting up
-        to speed can dominate performance for a path with a large RTT, and
-        requires the congestion and flow controls to accommodate the impact of
-        path delay.</t>
+        transmit the first data.</t>
+      </section>
+
+      <section title="Getting up to Speed">
+        <t>Results of <xref target="IJSCN19"> </xref> illustrate that it
+        can still take many RTTs for a CC to increase the sending rate to fill
+        the bottleneck capacity. The delay in getting up to speed can dominate
+        performance for a path with a large RTT, and requires the congestion
+        and flow controls to accommodate the impact of path delay.</t>
 
         <t>One relevant solution is tuning of the initial window described in
         <xref target="I-D.irtf-iccrg-sallantin-initial-spreading"> </xref> ,
